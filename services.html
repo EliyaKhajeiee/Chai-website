@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Beyond The Game</title>
+  <meta name="description" content="LinkedIn management, brand positioning, and business network services for professional athletes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* PAGE HERO */
+    .srv-hero {
+      padding: 210px 0 130px;
+      text-align: center;
+      background: linear-gradient(160deg, #07070a 0%, #0c0c18 55%, #07070a 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .srv-hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(201,169,110,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201,169,110,0.03) 1px, transparent 1px);
+      background-size: 88px 88px;
+    }
+    .srv-hero__content { position: relative; z-index: 1; }
+    .srv-hero__eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 28px;
+    }
+    .srv-hero__eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 32px; height: 1px;
+      background: var(--gold);
+    }
+    .srv-hero__title {
+      font-family: var(--font-display);
+      font-size: clamp(56px, 8vw, 110px);
+      font-weight: 400;
+      line-height: 1.0;
+      letter-spacing: -0.03em;
+      color: var(--white);
+      margin-bottom: 32px;
+    }
+    .srv-hero__title em { font-style: italic; color: var(--gold); }
+    .srv-hero__sub {
+      font-size: 18px;
+      color: var(--white-2);
+      max-width: 540px;
+      margin: 0 auto;
+      line-height: 1.75;
+    }
+
+    /* SERVICE SECTIONS */
+    .srv-section {
+      padding: 110px 0;
+      border-top: 1px solid var(--border-gold);
+    }
+    .srv-section:first-of-type { border-top: none; }
+    .srv-section--alt { background: var(--black-2); }
+
+    .srv-section__top {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 40px;
+      margin-bottom: 56px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid var(--border);
+    }
+    .srv-section__num {
+      font-family: var(--font-display);
+      font-size: clamp(100px, 14vw, 180px);
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      color: rgba(201,169,110,0.06);
+      flex-shrink: 0;
+    }
+    .srv-section__heading { flex: 1; }
+    .srv-section__title {
+      font-family: var(--font-display);
+      font-size: clamp(52px, 7vw, 88px);
+      font-weight: 400;
+      line-height: 1.05;
+      letter-spacing: -0.025em;
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+    .srv-section__desc {
+      font-size: 17px;
+      color: var(--gray);
+      max-width: 620px;
+      line-height: 1.85;
+    }
+
+    /* INCLUDES GRID */
+    .srv-includes {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      border-top: 1px solid var(--border);
+      border-left: 1px solid var(--border);
+    }
+    .srv-include {
+      padding: 28px 36px;
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      font-size: 15px;
+      color: var(--white-2);
+      line-height: 1.55;
+      transition: background 0.3s var(--ease), color 0.3s var(--ease);
+    }
+    .srv-include:hover {
+      background: var(--black-3);
+      color: var(--white);
+    }
+    .srv-include__label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+
+    /* PROCESS */
+    .process-section {
+      padding: 130px 0;
+      background: var(--black);
+    }
+    .process-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: end;
+      padding-bottom: 80px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 0;
+    }
+    .process-header__title {
+      font-family: var(--font-display);
+      font-size: clamp(48px, 6vw, 80px);
+      font-weight: 400;
+      line-height: 1.05;
+      letter-spacing: -0.025em;
+      color: var(--white);
+    }
+    .process-header__sub {
+      font-size: 16px;
+      color: var(--gray);
+      line-height: 1.8;
+      align-self: end;
+    }
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-left: 1px solid var(--border);
+    }
+    .process-step {
+      padding: 56px 40px;
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      transition: background 0.35s var(--ease);
+    }
+    .process-step:hover { background: var(--black-3); }
+    .process-step__num {
+      font-family: var(--font-display);
+      font-size: 72px;
+      font-weight: 400;
+      color: rgba(201,169,110,0.12);
+      line-height: 1;
+      letter-spacing: -0.03em;
+      margin-bottom: 28px;
+    }
+    .process-step__name {
+      font-family: var(--font-display);
+      font-size: 32px;
+      font-weight: 500;
+      color: var(--white);
+      margin-bottom: 14px;
+    }
+    .process-step__desc {
+      font-size: 14px;
+      color: var(--gray);
+      line-height: 1.75;
+    }
+
+    /* PHOTO STRIP */
+    .srv-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 4px;
+      height: 260px;
+      overflow: hidden;
+    }
+    .srv-strip__img {
+      overflow: hidden;
+      position: relative;
+    }
+    .srv-strip__img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      filter: grayscale(25%) brightness(0.72);
+      transition: filter 0.55s cubic-bezier(0.4,0,0.2,1), transform 0.65s cubic-bezier(0.4,0,0.2,1);
+      display: block;
+    }
+    .srv-strip__img:hover img {
+      filter: grayscale(0%) brightness(0.9);
+      transform: scale(1.04);
+    }
+    @media (max-width: 1000px) {
+      .srv-section__top { flex-direction: column; align-items: flex-start; gap: 0; }
+      .srv-includes { grid-template-columns: 1fr 1fr; }
+      .process-header { grid-template-columns: 1fr; gap: 20px; }
+      .process-steps { grid-template-columns: 1fr 1fr; }
+      .srv-strip { height: 200px; }
+    }
+    @media (max-width: 640px) {
+      .srv-includes { grid-template-columns: 1fr; }
+      .process-steps { grid-template-columns: 1fr; }
+      .srv-section__num { font-size: 80px; }
+      .srv-strip { grid-template-columns: repeat(2, 1fr); height: 220px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav__container">
+    <a href="index.html" class="nav__logo">
+      <div class="nav__logo-mark">
+        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 7h10M8 3l4 4-4 4"/>
+        </svg>
+      </div>
+      Beyond The Game
+    </a>
+    <div class="nav__links">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="services.html" class="nav__link">Services</a>
+      <a href="about.html" class="nav__link">About</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+      <a href="contact.html" class="nav__cta">Book a Call</a>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav__mobile" id="mobile-nav">
+  <a href="index.html" class="nav__mobile-link">Home</a>
+  <a href="services.html" class="nav__mobile-link">Services</a>
+  <a href="about.html" class="nav__mobile-link">About</a>
+  <a href="contact.html" class="nav__mobile-link">Contact</a>
+  <a href="contact.html" class="btn btn--gold nav__mobile-cta">Get in Touch</a>
+</div>
+
+<!-- HERO -->
+<section class="srv-hero">
+  <div class="srv-hero__content">
+    <span class="srv-hero__eyebrow anim">What We Do</span>
+    <h1 class="srv-hero__title anim anim--d1">
+      Three services.<br><em>One purpose.</em>
+    </h1>
+    <p class="srv-hero__sub anim anim--d2">Built to work together. Each one engineered to turn your athletic credibility into lasting professional capital.</p>
+  </div>
+</section>
+
+<!-- PHOTO STRIP -->
+<div class="srv-strip" aria-hidden="true">
+  <div class="srv-strip__img">
+    <img src="D%20bailey.jpg" alt="" loading="lazy">
+  </div>
+  <div class="srv-strip__img">
+    <img src="Zariah%20Nogales.webp" alt="" loading="lazy">
+  </div>
+  <div class="srv-strip__img">
+    <img src="jared-browns_2023-12-22_10-56-20.jpg" alt="" loading="lazy">
+  </div>
+  <div class="srv-strip__img">
+    <img src="Erik%20Howlin.webp" alt="" loading="lazy">
+  </div>
+</div>
+
+<!-- SERVICES WRAPPER -->
+<div style="background: var(--black);">
+  <div class="container">
+
+    <!-- SERVICE 01 -->
+    <section class="srv-section">
+      <div class="srv-section__top">
+        <div class="srv-section__num anim">01</div>
+        <div class="srv-section__heading">
+          <h2 class="srv-section__title anim anim--d1">LinkedIn<br>Management</h2>
+          <p class="srv-section__desc anim anim--d2">Your LinkedIn is the first thing every investor, sponsor, and executive sees when they Google your name. We take full ownership of it — rebuilding it from scratch, keeping it active, strategic, and working for you around the clock.</p>
+        </div>
+      </div>
+      <div class="srv-includes anim anim--d2">
+        <div class="srv-include">
+          <div class="srv-include__label">Profile</div>
+          Full rewrite of your headline, summary, experience, and featured section
+        </div>
+        <div class="srv-include">
+          <div class="srv-include__label">Content</div>
+          Regular posts written and published in your authentic voice
+        </div>
+        <div class="srv-include">
+          <div class="srv-include__label">Engagement</div>
+          Comment and inbox management handled on your behalf
+        </div>
+        <div class="srv-include">
+          <div class="srv-include__label">Visibility</div>
+          Algorithm and SEO optimization for professional discoverability
+        </div>
+        <div class="srv-include">
+          <div class="srv-include__label">Reporting</div>
+          Monthly analytics report with growth insights and next steps
+        </div>
+        <div class="srv-include">
+          <div class="srv-include__label">Management</div>
+          A dedicated account manager who knows your brand inside out
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE 02 -->
+    <section class="srv-section srv-section--alt" style="margin: 0 -48px; padding-left: 48px; padding-right: 48px;">
+      <div class="srv-section__top">
+        <div class="srv-section__num anim">02</div>
+        <div class="srv-section__heading">
+          <h2 class="srv-section__title anim anim--d1">Brand<br>Positioning</h2>
+          <p class="srv-section__desc anim anim--d2">Your name alone isn't enough. You need a narrative that makes decision-makers see you as a peer — not just a former athlete. We build the complete brand framework that tells your story in a language the business world understands and respects.</p>
+        </div>
+      </div>
+      <div class="srv-includes anim anim--d2">
+        <div class="srv-include">
+          <div class="srv-include__label">Strategy</div>
+          Full personal brand strategy and positioning document
+        </div>
+        <div class="srv-include">
+          <div class="srv-include__label">Audience</div>
+          Target audience identification and decision-maker personas
+        </div>
+        <div class="srv-include">
+          <div class="srv-include__label">Voice</div>
+          Brand tone, messaging guide, and communication framework
+        </div>
+        <div class="srv-include">
+          <div class="srv-include__label">Narrative</div>
+          Athlete-to-executive bridge built around your story
+        </div>
+        <div class="srv-include">
+          <div class="srv-include__label">Copywriting</div>
+          Bio and speaker pages written for press, media, and partners
+        </div>
+        <div class="srv-include">
+          <div class="srv-include__label">Positioning</div>
+          Quarterly brand review and message refinement
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE 03 -->
+    <section class="srv-section">
+      <div class="srv-section__top">
+        <div class="srv-section__num anim">03</div>
+        <div class="srv-section__heading">
+          <h2 class="srv-section__title anim anim--d1">Business<br>Network</h2>
+          <p class="srv-section__desc anim anim--d2">The right introduction changes everything. We grow your network with founders, investors, sponsors, and executives who have genuine interest in athletes of your caliber — turning connections into real conversations and conversations into deals.</p>
+        </div>
+      </div>
+      <div class="srv-includes anim anim--d2">
+        <div class="srv-include">
+          <div class="srv-include__label">Outreach</div>
+          Weekly targeted connection requests to qualified decision-makers
+        </div>
+        <div class="srv-include">
+          <div class="srv-include__label">Messaging</div>
+          Personalized outreach messages written and sent on your behalf
+        </div>
+        <div class="srv-include">
+          <div class="srv-include__label">Opportunities</div>
+          Real-time alerts on partnership and sponsorship openings
+        </div>
+        <div class="srv-include">
+          <div class="srv-include__label">Introductions</div>
+          Warm introductions to relevant investors and founders
+        </div>
+        <div class="srv-include">
+          <div class="srv-include__label">Pipeline</div>
+          Deal flow tracking and structured follow-up support
+        </div>
+        <div class="srv-include">
+          <div class="srv-include__label">Placement</div>
+          Speaking and podcast opportunities aligned to your brand
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<!-- PROCESS -->
+<section class="process-section">
+  <div class="container">
+    <div class="process-header">
+      <div>
+        <span class="section-label anim">The Process</span>
+        <h2 class="process-header__title anim anim--d1">How we<br>get to work.</h2>
+      </div>
+      <p class="process-header__sub anim anim--d2">We handle every step. Your only job is to show up as yourself — we take care of everything else from day one.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step anim">
+        <div class="process-step__num">01</div>
+        <div class="process-step__name">Audit</div>
+        <p class="process-step__desc">We audit your current digital presence and map the exact gaps between where you are and where you need to be.</p>
+      </div>
+      <div class="process-step anim anim--d1">
+        <div class="process-step__num">02</div>
+        <div class="process-step__name">Strategy</div>
+        <p class="process-step__desc">We build a custom brand roadmap built around your specific story, audience, and long-term goals.</p>
+      </div>
+      <div class="process-step anim anim--d2">
+        <div class="process-step__num">03</div>
+        <div class="process-step__name">Build</div>
+        <p class="process-step__desc">We rebuild your profile, launch your content, and begin growing your network — all in the first 30 days.</p>
+      </div>
+      <div class="process-step anim anim--d3">
+        <div class="process-step__num">04</div>
+        <div class="process-step__name">Scale</div>
+        <p class="process-step__desc">We convert connections into conversations, and conversations into tangible opportunities — deals, partnerships, investments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band" style="border-top: 1px solid var(--border);">
+  <div class="container">
+    <span class="cta-band__label">Get Started</span>
+    <h2 class="cta-band__title anim">Ready to build something<br>that outlasts your sport?</h2>
+    <p class="cta-band__sub anim anim--d1">Email us and we'll send back a free audit of your current presence within 24 hours.</p>
+    <div class="cta-band__actions anim anim--d2">
+      <a href="contact.html" class="btn btn--gold">Get in Touch</a>
+      <a href="about.html" class="btn btn--ghost">Our Story</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__brand-name">Beyond The Game</div>
+        <div class="footer__brand-domain">joinbeyondthegame.com</div>
+        <p class="footer__tagline">Your game gave you a platform. We turn it into a legacy.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Navigate</div>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Services</div>
+        <ul class="footer__links">
+          <li><a href="services.html">LinkedIn Management</a></li>
+          <li><a href="services.html">Brand Positioning</a></li>
+          <li><a href="services.html">Business Network</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Connect</div>
+        <ul class="footer__links">
+          <li><a href="mailto:info@joinbeyondthegame.com">info@joinbeyondthegame.com</a></li>
+          <li><a href="contact.html">Get in Touch</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 Beyond The Game. All rights reserved.</span>
+      <span>Built for athletes who think beyond the game.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

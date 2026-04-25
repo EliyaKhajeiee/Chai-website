@@ -1,11 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chai</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyond The Game — LinkedIn Agency for Athletes</title>
+  <meta name="description" content="Beyond The Game helps elite athletes build the professional presence that creates wealth, opens doors, and extends your legacy far beyond the final whistle.">
+  <meta property="og:title" content="Beyond The Game — Turn Your Story Into Capital">
+  <meta property="og:description" content="LinkedIn agency built for athletes. We build the professional presence that creates wealth and opens doors.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://joinbeyondthegame.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Coming soon</h1>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav__container">
+    <a href="index.html" class="nav__logo">
+      <div class="nav__logo-mark">
+        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 7h10M8 3l4 4-4 4"/>
+        </svg>
+      </div>
+      Beyond The Game
+    </a>
+    <div class="nav__links">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="services.html" class="nav__link">Services</a>
+      <a href="about.html" class="nav__link">About</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+      <a href="contact.html" class="nav__cta">Book a Call</a>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="nav__mobile" id="mobile-nav">
+  <a href="index.html" class="nav__mobile-link">Home</a>
+  <a href="services.html" class="nav__mobile-link">Services</a>
+  <a href="about.html" class="nav__mobile-link">About</a>
+  <a href="contact.html" class="nav__mobile-link">Contact</a>
+  <a href="contact.html" class="btn btn--gold nav__mobile-cta">Book a Call</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__bg">
+    <div class="hero__glow"></div>
+  </div>
+  <div class="hero__visual" aria-hidden="true">
+    <div class="hero__photo hero__photo--1">
+      <img src="DSC07650.jpg" alt="">
+    </div>
+    <div class="hero__photo hero__photo--2">
+      <img src="IMG_2694.JPG" alt="">
+    </div>
+    <div class="hero__photo hero__photo--3">
+      <img src="images.jpeg" alt="">
+    </div>
+  </div>
+  <div class="hero__content">
+    <div class="container">
+      <span class="hero__eyebrow">LinkedIn Agency for Athletes</span>
+      <h1 class="hero__headline">
+        Turn Your Story<br>Into <em>Capital</em>
+      </h1>
+      <p class="hero__sub">Your athletic career gave you credibility the world respects. We turn it into a professional brand that opens doors, builds wealth, and outlasts your sport.</p>
+      <div class="hero__actions">
+        <a href="contact.html" class="btn btn--gold">Book a Strategy Call</a>
+        <a href="services.html" class="btn btn--ghost">See Our Services</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero__scroll">
+    <span class="hero__scroll-label">Scroll</span>
+    <div class="hero__scroll-line"></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="marquee__track">
+    <span>LinkedIn Management</span><span class="marquee__sep">◆</span>
+    <span>Brand Positioning</span><span class="marquee__sep">◆</span>
+    <span>Business Networks</span><span class="marquee__sep">◆</span>
+    <span>Personal Branding</span><span class="marquee__sep">◆</span>
+    <span>Athlete Marketing</span><span class="marquee__sep">◆</span>
+    <span>Deal Flow</span><span class="marquee__sep">◆</span>
+    <span>Legacy Building</span><span class="marquee__sep">◆</span>
+    <!-- duplicate for seamless loop -->
+    <span>LinkedIn Management</span><span class="marquee__sep">◆</span>
+    <span>Brand Positioning</span><span class="marquee__sep">◆</span>
+    <span>Business Networks</span><span class="marquee__sep">◆</span>
+    <span>Personal Branding</span><span class="marquee__sep">◆</span>
+    <span>Athlete Marketing</span><span class="marquee__sep">◆</span>
+    <span>Deal Flow</span><span class="marquee__sep">◆</span>
+    <span>Legacy Building</span><span class="marquee__sep">◆</span>
+  </div>
+</div>
+
+<!-- PROBLEM -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="problem__header">
+      <span class="section-label anim">The Problem</span>
+      <h2 class="section-title anim anim--d1">Most athletes retire without<br>a professional identity.</h2>
+      <p class="section-sub anim anim--d2">The jersey ends. The paychecks slow. And without a professional presence, the doors that should open — stay closed.</p>
+    </div>
+    <div class="problem__grid">
+      <div class="problem__item anim">
+        <div class="problem__stat">78%</div>
+        <p class="problem__label">of professional athletes face serious financial difficulties within five years of retirement.</p>
+      </div>
+      <div class="problem__item anim anim--d1">
+        <div class="problem__stat">&lt;1%</div>
+        <p class="problem__label">of athletes have an active, optimized LinkedIn presence that speaks to business audiences.</p>
+      </div>
+      <div class="problem__item anim anim--d2">
+        <div class="problem__stat">12 yrs</div>
+        <p class="problem__label">The average professional sports career. Most athletes need a second identity long before they're ready.</p>
+      </div>
+      <div class="problem__item anim anim--d3">
+        <div class="problem__stat">$0</div>
+        <p class="problem__label">LinkedIn-generated business revenue for the vast majority of retired and active professional athletes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE DO -->
+<section class="section">
+  <div class="container">
+    <span class="section-label anim">What We Do</span>
+    <h2 class="section-title anim anim--d1">Three pillars. One purpose.</h2>
+    <p class="section-sub anim anim--d2">We build the infrastructure of a lasting professional career — starting with LinkedIn.</p>
+    <div class="services-grid">
+      <div class="service-card anim">
+        <div class="service-card__num">01</div>
+        <div class="service-card__icon">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="20" cy="12" r="6"/>
+            <path d="M8 34c0-6.627 5.373-12 12-12s12 5.373 12 12"/>
+            <path d="M28 6l4 4-4 4"/>
+          </svg>
+        </div>
+        <h3 class="service-card__title">LinkedIn Management</h3>
+        <p class="service-card__text">Your profile, rebuilt. Your content, written and posted. We handle every detail so your LinkedIn becomes a 24/7 first impression that works while you compete.</p>
+        <a href="services.html" class="service-card__link">
+          Learn more
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 7h10M8 3l4 4-4 4"/>
+          </svg>
+        </a>
+      </div>
+      <div class="service-card anim anim--d1">
+        <div class="service-card__num">02</div>
+        <div class="service-card__icon">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="20,4 26,14 38,16 29,25 31,37 20,31 9,37 11,25 2,16 14,14"/>
+          </svg>
+        </div>
+        <h3 class="service-card__title">Brand Positioning</h3>
+        <p class="service-card__text">We craft your narrative so decision-makers see you as a peer — not just a player. Your story becomes your most powerful business asset.</p>
+        <a href="services.html" class="service-card__link">
+          Learn more
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 7h10M8 3l4 4-4 4"/>
+          </svg>
+        </a>
+      </div>
+      <div class="service-card anim anim--d2">
+        <div class="service-card__num">03</div>
+        <div class="service-card__icon">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="28" cy="12" r="4"/>
+            <circle cx="20" cy="28" r="4"/>
+            <path d="M16 12h8M14 15l-2 9M26 15l2 9"/>
+          </svg>
+        </div>
+        <h3 class="service-card__title">Business Network</h3>
+        <p class="service-card__text">Warm introductions to founders, investors, and executives. We turn your network potential into a pipeline of real opportunities — sponsorships, partnerships, and deals.</p>
+        <a href="services.html" class="service-card__link">
+          Learn more
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 7h10M8 3l4 4-4 4"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="process__header">
+      <span class="section-label anim">How It Works</span>
+      <h2 class="section-title anim anim--d1">Four steps to a brand<br>that opens doors.</h2>
+    </div>
+    <div class="process__steps">
+      <div class="process__connector"></div>
+      <div class="process__step anim">
+        <div class="process__num">1</div>
+        <h3 class="process__title">Audit</h3>
+        <p class="process__text">We analyze your current digital presence and identify the exact gaps between where you are and where you need to be.</p>
+      </div>
+      <div class="process__step anim anim--d1">
+        <div class="process__num">2</div>
+        <h3 class="process__title">Strategy</h3>
+        <p class="process__text">We craft a custom brand narrative and content plan built around your specific story, goals, and target audience.</p>
+      </div>
+      <div class="process__step anim anim--d2">
+        <div class="process__num">3</div>
+        <h3 class="process__title">Build</h3>
+        <p class="process__text">We optimize your LinkedIn, create your content calendar, and begin growing your network with the right people.</p>
+      </div>
+      <div class="process__step anim anim--d3">
+        <div class="process__num">4</div>
+        <h3 class="process__title">Scale</h3>
+        <p class="process__text">We turn connections into conversations and conversations into tangible opportunities — deals, partnerships, investments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ATHLETES -->
+<section class="athletes">
+  <div class="container">
+    <div class="athletes__header">
+      <span class="section-label anim">Our Athletes</span>
+      <h2 class="section-title anim anim--d1">The athletes building<br>their legacy <em>right now.</em></h2>
+      <p class="section-sub anim anim--d2">Real professionals. Real results. These are the names rewriting what it means to be an athlete off the field.</p>
+    </div>
+  </div>
+  <div class="athletes__wall">
+    <div class="athletes__col">
+      <div class="athlete-photo" style="height:340px">
+        <img src="D%20bailey.jpg" alt="D. Bailey" loading="lazy">
+        <div class="athlete-photo__info">
+          <span class="athlete-photo__name">D. Bailey</span>
+          <span class="athlete-photo__tag">BTG Athlete</span>
+        </div>
+      </div>
+      <div class="athlete-photo" style="height:260px">
+        <img src="Dbailey2.png" alt="D. Bailey" loading="lazy">
+        <div class="athlete-photo__info">
+          <span class="athlete-photo__name">D. Bailey</span>
+          <span class="athlete-photo__tag">BTG Athlete</span>
+        </div>
+      </div>
+    </div>
+    <div class="athletes__col">
+      <div class="athlete-photo" style="height:310px">
+        <img src="CBarkate.webp" alt="C. Barkate" loading="lazy">
+        <div class="athlete-photo__info">
+          <span class="athlete-photo__name">C. Barkate</span>
+          <span class="athlete-photo__tag">BTG Athlete</span>
+        </div>
+      </div>
+      <div class="athlete-photo" style="height:290px">
+        <img src="Zariah%20Nogales.webp" alt="Zariah Nogales" loading="lazy">
+        <div class="athlete-photo__info">
+          <span class="athlete-photo__name">Zariah Nogales</span>
+          <span class="athlete-photo__tag">BTG Athlete</span>
+        </div>
+      </div>
+    </div>
+    <div class="athletes__col">
+      <div class="athlete-photo" style="height:430px">
+        <img src="CBarkate%202.webp" alt="C. Barkate" loading="lazy">
+        <div class="athlete-photo__info">
+          <span class="athlete-photo__name">C. Barkate</span>
+          <span class="athlete-photo__tag">BTG Athlete</span>
+        </div>
+      </div>
+      <div class="athlete-photo" style="height:170px">
+        <img src="Erik%20Howlin.webp" alt="Erik Howlin" loading="lazy">
+        <div class="athlete-photo__info">
+          <span class="athlete-photo__name">Erik Howlin</span>
+          <span class="athlete-photo__tag">BTG Athlete</span>
+        </div>
+      </div>
+    </div>
+    <div class="athletes__col">
+      <div class="athlete-photo" style="height:260px">
+        <img src="Cbarkate%203.webp" alt="C. Barkate" loading="lazy">
+        <div class="athlete-photo__info">
+          <span class="athlete-photo__name">C. Barkate</span>
+          <span class="athlete-photo__tag">BTG Athlete</span>
+        </div>
+      </div>
+      <div class="athlete-photo" style="height:340px">
+        <img src="JKoo.jfif" alt="J. Koo" loading="lazy">
+        <div class="athlete-photo__info">
+          <span class="athlete-photo__name">J. Koo</span>
+          <span class="athlete-photo__tag">BTG Athlete</span>
+        </div>
+      </div>
+    </div>
+    <div class="athletes__col">
+      <div class="athlete-photo" style="height:390px">
+        <img src="jared-browns_2023-12-22_10-56-20.jpg" alt="Jared Brown" loading="lazy">
+        <div class="athlete-photo__info">
+          <span class="athlete-photo__name">Jared Brown</span>
+          <span class="athlete-photo__tag">BTG Athlete</span>
+        </div>
+      </div>
+      <div class="athlete-photo" style="height:210px">
+        <img src="p1065593903045253_557_thum.png" alt="" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <div class="container">
+    <div class="testimonials__header">
+      <span class="section-label anim">Results</span>
+      <h2 class="section-title anim anim--d1">What happens when athletes<br>take their brand seriously.</h2>
+    </div>
+    <div class="testimonials__grid">
+      <div class="testimonial-card anim">
+        <div class="testimonial-card__quote">&ldquo;</div>
+        <p class="testimonial-card__text">I spent 9 years in the league and never once thought about LinkedIn. Beyond The Game completely changed how the business world sees me. Within two months I had two brand deal conversations I never expected.</p>
+        <div class="testimonial-card__anon">
+          <div class="testimonial-card__role">Wide Receiver — 9 Years Pro</div>
+        </div>
+        <div class="testimonial-card__result">↑ 2 brand partnership deals within 60 days</div>
+      </div>
+      <div class="testimonial-card anim anim--d1">
+        <div class="testimonial-card__quote">&ldquo;</div>
+        <p class="testimonial-card__text">I had a big name in college but zero professional presence after I went undrafted. BTG rebuilt my entire identity and helped me land a brand ambassador deal with a sports tech startup. Game changer.</p>
+        <div class="testimonial-card__anon">
+          <div class="testimonial-card__role">College All-Star — Undrafted</div>
+        </div>
+        <div class="testimonial-card__result">↑ Brand ambassador deal + 3 investor meetings</div>
+      </div>
+      <div class="testimonial-card anim anim--d2">
+        <div class="testimonial-card__quote">&ldquo;</div>
+        <p class="testimonial-card__text">I was skeptical at first — I'm a soccer player, not a businessman. But the content they create sounds exactly like me, and the connections they've made have already turned into real conversations with real money behind them.</p>
+        <div class="testimonial-card__anon">
+          <div class="testimonial-card__role">Professional Footballer</div>
+        </div>
+        <div class="testimonial-card__result">↑ Speaking invite + 2 active sponsorship discussions</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="container">
+    <span class="cta-band__label">Ready?</span>
+    <h2 class="cta-band__title anim">Your career is bigger<br>than your sport.</h2>
+    <p class="cta-band__sub anim anim--d1">Book a free 30-minute strategy call. No pitch. Just clarity.</p>
+    <div class="cta-band__actions anim anim--d2">
+      <a href="contact.html" class="btn btn--gold">Book a Free Strategy Call</a>
+      <a href="about.html" class="btn btn--ghost">Our Story</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__brand-name">Beyond The Game</div>
+        <div class="footer__brand-domain">joinbeyondthegame.com</div>
+        <p class="footer__tagline">Your game gave you a platform. We turn it into a legacy.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Navigate</div>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Services</div>
+        <ul class="footer__links">
+          <li><a href="services.html">LinkedIn Management</a></li>
+          <li><a href="services.html">Brand Positioning</a></li>
+          <li><a href="services.html">Business Network</a></li>
+          <li><a href="services.html">Pricing</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Connect</div>
+        <ul class="footer__links">
+          <li><a href="mailto:info@joinbeyondthegame.com">info@joinbeyondthegame.com</a></li>
+          <li><a href="contact.html">Book a Strategy Call</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 Beyond The Game. All rights reserved.</span>
+      <span>Built for athletes who think beyond the game.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
 </body>
 </html>
