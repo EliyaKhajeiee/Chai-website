@@ -1544,6 +1544,8 @@ img { display: block; max-width: 100%; }
   .service-detail__number { display: none; }
   .hero__visual { display: none; }
   .serve__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 800px) {
   .platform-compare { grid-template-columns: 1fr; }
 }
 @media (max-width: 900px) {
