@@ -1167,9 +1167,7 @@ img { display: block; max-width: 100%; }
 }
 .about-story__img-wrap .about-img--main {
   width: 100%;
-  height: 520px;
-  object-fit: cover;
-  object-position: center center;
+  height: auto;
   display: block;
 }
 .about-story__img-wrap .about-img--accent {
@@ -1177,9 +1175,7 @@ img { display: block; max-width: 100%; }
   bottom: 0;
   right: -20px;
   width: 54%;
-  height: 220px;
-  object-fit: cover;
-  object-position: center center;
+  height: auto;
   display: block;
   border: 4px solid var(--black);
   box-shadow: 0 8px 40px rgba(0,0,0,0.5);
@@ -1443,9 +1439,7 @@ img { display: block; max-width: 100%; }
 }
 .hero__photo img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
+  height: auto;
   display: block;
   filter: grayscale(18%) brightness(0.72);
 }
@@ -1499,12 +1493,10 @@ img { display: block; max-width: 100%; }
 }
 .athlete-photo img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
+  height: auto;
+  display: block;
   filter: grayscale(22%) brightness(0.78);
   transition: filter 0.55s var(--ease), transform 0.65s var(--ease);
-  display: block;
 }
 .athlete-photo:hover img {
   filter: grayscale(0%) brightness(0.95);
