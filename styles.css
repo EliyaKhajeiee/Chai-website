@@ -1439,21 +1439,18 @@ img { display: block; max-width: 100%; }
 }
 .hero__photo img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
   display: block;
   filter: grayscale(18%) brightness(0.72);
 }
 .hero__photo--1 {
-  top: 5%;
-  right: 10%;
-  width: 48%;
-  border: 1px solid rgba(201,169,110,0.18);
+  inset: 0;
+  width: 100%;
 }
 .hero__photo--2 {
-  top: 8%;
-  right: 1%;
-  width: 34%;
-  border: 1px solid rgba(201,169,110,0.24);
+  display: none;
 }
 .hero__photo--3 {
   display: none;
@@ -1484,10 +1481,13 @@ img { display: block; max-width: 100%; }
   overflow: hidden;
   flex-shrink: 0;
   cursor: default;
+  aspect-ratio: 3 / 4;
 }
 .athlete-photo img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
   display: block;
   filter: grayscale(22%) brightness(0.78);
   transition: filter 0.55s var(--ease), transform 0.65s var(--ease);
