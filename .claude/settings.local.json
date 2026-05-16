@@ -6,7 +6,11 @@
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
       "Bash(git push *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "PowerShell(Get-ChildItem \"c:\\\\Users\\\\Eliya\\\\Downloads\" | Where-Object {$_.Extension -match \"\\\\.\\(jpg|jpeg|png|webp|jfif|heic|JPG|PNG|JPEG|WEBP\\)$\"} | Sort-Object LastWriteTime -Descending | Select-Object Name, LastWriteTime -First 20 | Format-Table -AutoSize)",
+      "Bash(git pull *)",
+      "Bash(gh repo *)",
+      "PowerShell(Get-ChildItem \"c:\\\\Users\\\\Eliya\\\\Chai-website\" -File | Where-Object { $_.Extension -match '\\\\.\\(jpg|jpeg|png|webp|avif|jfif\\)$' } | Select-Object -ExpandProperty Name)"
     ]
   }
 }
