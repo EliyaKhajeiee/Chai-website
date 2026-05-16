@@ -1460,7 +1460,11 @@ img { display: block; max-width: 100%; }
   border: 1px solid rgba(201,169,110,0.24);
 }
 .hero__photo--3 {
-  display: none;
+  bottom: 12%;
+  right: 46%;
+  width: 26%;
+  height: 32%;
+  border: 1px solid rgba(201,169,110,0.1);
 }
 
 /* === ATHLETES WALL === */
