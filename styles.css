@@ -1444,25 +1444,19 @@ img { display: block; max-width: 100%; }
   filter: grayscale(18%) brightness(0.72);
 }
 .hero__photo--1 {
-  top: 8%;
+  top: 5%;
   right: 10%;
-  width: 52%;
-  height: 60%;
+  width: 48%;
   border: 1px solid rgba(201,169,110,0.18);
 }
 .hero__photo--2 {
-  top: 40%;
+  top: 8%;
   right: 1%;
-  width: 37%;
-  height: 48%;
+  width: 34%;
   border: 1px solid rgba(201,169,110,0.24);
 }
 .hero__photo--3 {
-  bottom: 12%;
-  right: 46%;
-  width: 26%;
-  height: 32%;
-  border: 1px solid rgba(201,169,110,0.1);
+  display: none;
 }
 
 /* === ATHLETES WALL === */

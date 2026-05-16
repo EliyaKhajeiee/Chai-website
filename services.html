@@ -201,21 +201,16 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 4px;
-      height: 260px;
-      overflow: hidden;
     }
     .srv-strip__img {
-      overflow: hidden;
       position: relative;
     }
     .srv-strip__img img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center center;
+      height: auto;
+      display: block;
       filter: grayscale(25%) brightness(0.72);
       transition: filter 0.55s cubic-bezier(0.4,0,0.2,1), transform 0.65s cubic-bezier(0.4,0,0.2,1);
-      display: block;
     }
     .srv-strip__img:hover img {
       filter: grayscale(0%) brightness(0.9);
