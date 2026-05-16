@@ -1169,7 +1169,7 @@ img { display: block; max-width: 100%; }
   width: 100%;
   height: 520px;
   object-fit: cover;
-  object-position: center top;
+  object-position: center center;
   display: block;
 }
 .about-story__img-wrap .about-img--accent {
@@ -1179,7 +1179,7 @@ img { display: block; max-width: 100%; }
   width: 54%;
   height: 220px;
   object-fit: cover;
-  object-position: center top;
+  object-position: center center;
   display: block;
   border: 4px solid var(--black);
   box-shadow: 0 8px 40px rgba(0,0,0,0.5);
@@ -1445,7 +1445,7 @@ img { display: block; max-width: 100%; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center center;
   display: block;
   filter: grayscale(18%) brightness(0.72);
 }
@@ -1501,7 +1501,7 @@ img { display: block; max-width: 100%; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center center;
   filter: grayscale(22%) brightness(0.78);
   transition: filter 0.55s var(--ease), transform 0.65s var(--ease);
   display: block;
